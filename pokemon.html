@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+
+  <div class="app-box">
+    <div class="content-stack">
+      <div class="logo-header">
+        <img id="logoImg" class="logo-img" src="logo.svg" alt="Logo" />
+        <span class="finder-text">Finder</span>
+      </div>
+
+      <p class="tagline">Type a name, catch the data!</p>
+
+      <p id="message"></p>
+
+      <div class="mascot-placeholder">
+        <svg viewBox="0 0 100 100" class="pokeball-icon" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="46" fill="#ffffff" stroke="#2c3e50" stroke-width="5"/>
+          <path d="M4 50 A46 46 0 0 1 96 50 Z" fill="#e3350d" stroke="#2c3e50" stroke-width="5"/>
+          <rect x="4" y="46" width="92" height="8" fill="#2c3e50"/>
+          <circle cx="50" cy="50" r="16" fill="#ffffff" stroke="#2c3e50" stroke-width="5"/>
+          <circle cx="50" cy="50" r="7" fill="#ffffff" stroke="#2c3e50" stroke-width="3"/>
+        </svg>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="pokemonInput" placeholder="e.g. pikachu">
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <div id="card" class="card hidden">
+        <h2 id="name"></h2>
+        <div class="card-content">
+          <div class="card-image">
+            <img id="image" src="" alt="">
+          </div>
+          <div class="card-info">
+            <p><strong>ID:</strong> <span id="id"></span></p>
+            <p><strong>Height:</strong> <span id="height"></span></p>
+            <p><strong>Weight:</strong> <span id="weight"></span></p>
+            <p><strong>Types:</strong> <span id="types"></span></p>
+            <p><strong>Abilities:</strong> <span id="abilities"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="pokemon.js"></script>
+</body>
+</html>
